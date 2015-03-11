@@ -3,8 +3,6 @@ import re
 
 @bot.firehose
 def listen(tag):
-    # Attempt to strip out URLs
-    #tag = re.sub('(https?|ftp)://\S+', '', tag)
     pattern = "#"
     m = re.search(pattern, tag, re.IGNORECASE)
     if m:
